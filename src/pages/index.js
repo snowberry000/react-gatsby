@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import Assets from "../components/Assets";
 import BuildingsStrip from "../components/BuildingsStrip";
 import Features from "../components/Features";
@@ -8,17 +9,33 @@ import Grid from "../components/layout/Grid";
 import LayoutWrapper from "../components/layout/LayoutWrapper";
 import Section from "../components/layout/Section";
 import SEO from "../components/seo";
-import SignupForm from "../components/SignupForm";
 import A1 from "../components/typography/A1";
 import A2 from "../components/typography/A2";
 import H1 from "../components/typography/H1";
-import H2 from "../components/typography/H2";
 import H3 from "../components/typography/H3";
-import H4 from "../components/typography/H4";
 import P1 from "../components/typography/P1";
 import P2 from "../components/typography/P2";
 import Venues from "../components/Venues";
+import colors from "../components/style/colors";
 import "../main.css";
+
+import Helmet from 'react-helmet'
+
+const StyledSignUpButton = styled.a`
+  background: ${props => colors[props.color] || colors.accent3};
+  border: 2px solid ${props => colors[props.color] || colors.accent3};
+  color: white;
+  border-radius: 0.4em;
+  padding: 0.6em 1em;
+  font-size: 1.05em;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+  :active {
+    filter: brightness(0.8);
+  }  
+`;
 
 const IndexPage = () => (
   <LayoutWrapper>
@@ -27,11 +44,8 @@ const IndexPage = () => (
     <Section bgColor="accent1" height="34em" center>
       <Grid columns="1fr 22em" breakAndCenter="850px">
         <div>
-          <H1>hassle free venue management</H1>
-          <H4 color="white">
-            Manage all your venues and spaces in one easy to use the platform.
-            Get&nbsp;paid&nbsp;on&nbsp;time and live a stress-free life.
-          </H4>
+          <H1>All in one venue management software</H1>
+          <StyledSignUpButton className="register-btn" href="#">Sign Up</StyledSignUpButton>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />
@@ -39,14 +53,6 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <BuildingsStrip bgColor="accent1" />
-    <Section small center>
-      <H3 center color="grey">
-        We think managing your venues and spaces should be simple and fast. We've created the right
-        tool for it.
-      </H3>
-      <H2 style={{ display: "inline-block", margin: ".5em 1em .5em 0" }}>Try it today</H2>
-      <SignupForm />
-    </Section>
     <Section center>
       <H3 center>Types of Venues Managed With Our Software</H3>
       <Venues />
@@ -61,14 +67,6 @@ const IndexPage = () => (
     </Section>
     <Section>
       <InfoCard />
-    </Section>
-    <Section center>
-      <H2 center>Sign up for free</H2>
-      <P1 color="grey" center>
-        Stop stressing about venue management now.
-      </P1>
-      <br />
-      <SignupForm />
     </Section>
     <Section />
     <Section small bgColor="lighter">
@@ -90,6 +88,22 @@ const IndexPage = () => (
         </div>
       </Grid>
     </Section>
+    <Helmet>
+      <script 
+        type="text/javascript" 
+        src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
+        data-widget-mode="login"
+        data-popup-selector="#login-btn">
+      </script>
+      <script 
+        type="text/javascript"
+        src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
+        data-widget-mode="register"
+        data-popup-selector=".register-btn"
+        data-plan-payment-term="month"
+        data-plan-uid="dpWrNgWn">
+      </script>
+    </Helmet>
   </LayoutWrapper>
 );
 

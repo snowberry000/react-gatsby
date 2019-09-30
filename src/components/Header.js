@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import LayoutBlock from "./layout/LayoutBlock";
 import LogoImg from "../images/Logo.png";
-import Button from "./Button";
 import ButtonsRow from "./layout/ButtonsRow";
-import P1 from "./typography/P1";
+import colors from "./style/colors";
 
 const HeaderWrapper = styled.div`
   ${LayoutBlock}
@@ -35,6 +34,34 @@ const Logo = styled.img`
   width: 15em;
 `;
 
+const StyledSignUpButton = styled.a`
+  background: ${props => colors[props.color] || colors.accent1};
+  border: 2px solid ${props => colors[props.color] || colors.accent1};
+  color: white;
+  border-radius: 0.4em;
+  padding: 0.6em 1em;
+  font-size: 1.05em;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  :active {
+    filter: brightness(0.8);
+  }
+  ${props =>
+    props.type === "secondary" &&
+    `
+    background: none;
+    color: ${colors.accent1};
+  `}
+  ${props =>
+    props.type === "tertiary" &&
+    `
+    background: none;
+    border: none;
+    color: ${colors.grey};
+  `}
+`;
+
 const Header = props => {
   return (
     <HeaderWrapper>
@@ -43,10 +70,10 @@ const Header = props => {
       </div>
       <div className="right">
         <ButtonsRow>
-          <Button type="tertiary">Help</Button>
+          <StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Help</StyledSignUpButton>
           <Space />
-          <Button type="secondary">Login</Button>
-          <Button>Sign Up</Button>
+          <StyledSignUpButton type="secondary" id="login-btn" href="#">Login</StyledSignUpButton>
+          <StyledSignUpButton className="register-btn" href="#">Sign Up</StyledSignUpButton>          
         </ButtonsRow>
       </div>
     </HeaderWrapper>
