@@ -73,7 +73,7 @@ const Header = props => {
           <StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Help</StyledSignUpButton>
           <Space />
           <StyledSignUpButton type="secondary" id="login-btn" href="#">Login</StyledSignUpButton>
-          <StyledSignUpButton className="register-btn" href="#">Sign Up</StyledSignUpButton>          
+          <StyledSignUpButton className="register-btn-header" href="#">Sign Up</StyledSignUpButton>          
         </ButtonsRow>
       </div>
     </HeaderWrapper>

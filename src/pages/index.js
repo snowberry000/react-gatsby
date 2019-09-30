@@ -45,7 +45,7 @@ const IndexPage = () => (
       <Grid columns="1fr 22em" breakAndCenter="850px">
         <div>
           <H1>All in one venue management software</H1>
-          <StyledSignUpButton className="register-btn" href="#">Sign Up</StyledSignUpButton>
+          <StyledSignUpButton className="register-btn-signup" href="#">Sign Up</StyledSignUpButton>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />
@@ -99,7 +99,15 @@ const IndexPage = () => (
         type="text/javascript"
         src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
         data-widget-mode="register"
-        data-popup-selector=".register-btn"
+        data-popup-selector=".register-btn-header"
+        data-plan-payment-term="month"
+        data-plan-uid="dpWrNgWn">
+      </script>
+      <script 
+        type="text/javascript"
+        src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
+        data-widget-mode="register"
+        data-popup-selector=".register-btn-signup"
         data-plan-payment-term="month"
         data-plan-uid="dpWrNgWn">
       </script>
