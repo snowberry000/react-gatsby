@@ -21,20 +21,30 @@ import "../main.css";
 
 import Helmet from 'react-helmet'
 
+const StyledHeaderContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;  
+`;
+
 const StyledSignUpButton = styled.a`
-  background: ${props => colors[props.color] || colors.accent3};
-  border: 2px solid ${props => colors[props.color] || colors.accent3};
-  color: white;
+  background: white;  
+  border: 2px solid white;
+  color: ${colors.accent1};
   border-radius: 0.4em;
   padding: 0.6em 1em;
   font-size: 1.05em;
   outline: none;
   cursor: pointer;
-  text-decoration: none;
-  float: left;
+  text-decoration: none;  
+  max-width: 100px;
   :active {
     filter: brightness(0.8);
-  }  
+  }    
+
+  @media screen and (max-width: 850px) {
+    align-self: center;
+    margin-top: 1rem;
+  }
 `;
 
 const IndexPage = () => (
@@ -43,10 +53,10 @@ const IndexPage = () => (
     <Header />
     <Section bgColor="accent1" height="34em" center>
       <Grid columns="1fr 22em" breakAndCenter="850px">
-        <div>
+        <StyledHeaderContentContainer>
           <H1>All in one venue management software</H1>
           <StyledSignUpButton className="register-btn-signup" href="#">Sign Up</StyledSignUpButton>
-        </div>
+        </StyledHeaderContentContainer>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />
         </div>
