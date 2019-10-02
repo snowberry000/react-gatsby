@@ -77,10 +77,7 @@ const IndexPage = () => (
             <H2 left color="accent3">Feature Heading</H2>
             <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
             <P2>
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
-
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </P2>
             <StyledMoreInformation>
               More Information  >
@@ -95,7 +92,7 @@ const IndexPage = () => (
             <H2 left color="accent3">Feature Heading</H2>
             <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
             <P2>
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </P2>
             <StyledMoreInformation>
               More Information  >
