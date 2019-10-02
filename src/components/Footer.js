@@ -16,22 +16,19 @@ const Footer = () => {
 				</div>
 				<div>
 					<P1 strong>Product</P1>
-					<li>How it works</li>
-					<li>Features</li>
-					<li>Pricing</li>
+					<li><a href="/how-it-works">How it works</a></li>
+					<li><a href="/features">Features</a></li>
+					<li><a href="/pricing">Pricing</a></li>
 				</div>
 				<div>
 					<P1 strong>Resources</P1>
 					<li><a href="http://help.heyagenda.com/support/kb#/categories">Help Desk</a></li>
-					<li>Case Studies</li>
-					<li>Blog</li>
 				</div>
 				<div>
 					<P1 strong>Company</P1>
-					<li>About us</li>
-					<li>Terms and Conditions</li>
-					<li>Terms of Use</li>
-					<li>Contact</li>
+					<li><a href="/about-us">About Us</a></li>
+					<li><a href="http://help.heyagenda.com/support/kb#/articles/qrm0azQX/terms-and-conditions" target="_blank">Terms and Conditions</a></li>
+					<li><a href="/contact">Contact</a></li>
 				</div>
 			</Grid>
 	  	</Section>

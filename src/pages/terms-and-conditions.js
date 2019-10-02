@@ -53,47 +53,19 @@ const IndexPage = () => (
   <LayoutWrapper>
     <SEO title="HeyAgenda: All in One Venue Management Software" />
     <Header />
-    <Section bgColor="accent3" height="20em" left>
-      <Grid columns="1fr 22em" breakAndCenter="850px">
-          <div style={{ alignItems: "left", justifyContent: "left" }}>
-          <H1>Making Event Management Simple.</H1>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Assets.Illustrations.Hero />
+    <Section bgColor="accent3" height="20em" center>
+      <Grid columns="1fr 0em" >
+          <div>
+          <H1 center>Terms and Conditions</H1>
         </div>
       </Grid>
     </Section>
     <Section height="20em" left>
-      <Grid columns="1fr 39em" breakAndCenter="850px">
+      <Grid columns="1fr 0em" breakAndCenter="850px">
         <div class="div1">
         <h2>Who are we?</h2>
         </div>
-      <div class="div2">
-        <p>We're on a relentless pursuit to make the events industry easier for everyone. We're not just solving problems by using software, but we're trying to make the events industry more accessible for everyone.</p>
-        <p>In 2016, We started off by creating <a href="https://www.justvenue.com">Just Venue</a>, an Online Venue Booking Platform to help customers find and book space for free. We then wanted to help our Venues Manage these bookings more efficiently and created Hey Agenda, an Online Venue Management Software</p>
-        <p>We created this to solve the needs of our hosts, to make their lives easier and make the booking process better for everyone. We want you to cut out the admin tasks and go back to what you enjoy, putting on events and attending to customers.</p>
-        <p>But we’re not stopping there. This is just the begining..</p>
-      </div>
       </Grid>
-    </Section>
-    <Section bgColor="accent3" height="20em" center >
-      <Grid columns="1fr 1em" breakAndCenter="850px">
-          <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">❝Our Mission is to make event booking an enjoyable experience for the guest and the host. To make life simplier and remove administrative burden.❞
-          </h2>
-        </div>
-      </Grid>
-    </Section>
-    <Section>
-      <Grid columns="40% 60%" fullHeight breakAndCenter="800px">
-        <Features />
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Assets.Illustrations.BookingFlow />
-        </div>
-      </Grid>
-    </Section>
-    <Section>
-      <InfoCard />
     </Section>
     <Section center>
           <H2 center>Still undecided?</H2>

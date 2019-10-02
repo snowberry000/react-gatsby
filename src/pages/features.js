@@ -56,7 +56,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" left>
       <Grid columns="1fr 22em" breakAndCenter="850px">
           <div style={{ alignItems: "left", justifyContent: "left" }}>
-          <H1>Making Event Management Simple.</H1>
+          <H1>Hey Agenda Features</H1>
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />

@@ -53,13 +53,10 @@ const IndexPage = () => (
   <LayoutWrapper>
     <SEO title="HeyAgenda: All in One Venue Management Software" />
     <Header />
-    <Section bgColor="accent3" height="20em" left>
-      <Grid columns="1fr 22em" breakAndCenter="850px">
-          <div style={{ alignItems: "left", justifyContent: "left" }}>
-          <H1>Making Event Management Simple.</H1>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Assets.Illustrations.Hero />
+    <Section bgColor="accent3" height="20em" center>
+      <Grid columns="1fr 0em" >
+          <div>
+          <H1 center>How it works</H1>
         </div>
       </Grid>
     </Section>
