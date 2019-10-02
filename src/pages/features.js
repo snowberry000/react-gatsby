@@ -89,11 +89,7 @@ const IndexPage = () => (
         </StyledFeatureContent>
       </Grid>
       <SpaceFeature />
-      <Grid columns="50% 50%" breakAndCenter="900px">
-        <StyledFeatureContent>
-          <img 
-            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
-        </StyledFeatureContent>        
+      <Grid columns="50% 50%" breakAndCenter="900px">      
         <StyledFeatureContent>
           <div>
             <H2 left color="accent3">Feature Heading</H2>
@@ -106,6 +102,10 @@ const IndexPage = () => (
             </StyledMoreInformation>          
           </div>
         </StyledFeatureContent>
+        <StyledFeatureContent>
+          <img 
+            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
+        </StyledFeatureContent>  
       </Grid>
       <SpaceFeature />
     </Section>
