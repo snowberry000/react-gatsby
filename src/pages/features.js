@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Assets from "../components/Assets";
 import Header from "../components/Header";
 import Grid from "../components/layout/Grid";
@@ -7,48 +6,11 @@ import LayoutWrapper from "../components/layout/LayoutWrapper";
 import Section from "../components/layout/Section";
 import SEO from "../components/seo";
 import H1 from "../components/typography/H1";
-import H2 from "../components/typography/H2";
-import H3 from "../components/typography/H3";
-import P2 from "../components/typography/P2";
+
 import "../main.css";
 import Footer from "../components/Footer";
 import Helmet from 'react-helmet'
-import colors from "../components/style/colors";
-import FeatureImg1 from "../images/calendar.jpg"
-
-const StyledH3 = styled(H3)`
-  margin-bottom: 0.5em;
-`;
-
-const StyledFeatureContent = styled.div`
-  display: flex;
-  align-items: center;
-  img {
-    width: 100%;
-  }
-`;
-
-const StyledMoreInformation = styled.a`
-  background: none;
-  border: 2px solid ${colors.accent3};
-  color: ${colors.accent3};
-  border-radius: 0.4em;
-  padding: 0.6em 1em;
-  font-size: 1.05em;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  :hover{
-    opacity: 0.8;
-  }
-  :active {
-    filter: brightness(0.8);
-  }
-`;
-
-const SpaceFeature = styled.div`
-  height: 4em;
-`;
+import FeatureInfoRow from "../components/FeatureInfoRow";
 
 const IndexPage = () => (
   <LayoutWrapper>
@@ -66,43 +28,20 @@ const IndexPage = () => (
     </Section>
     
     <Section>
-      <Grid columns="50% 50%" breakAndCenter="900px">
-        <StyledFeatureContent>
-          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
-        </StyledFeatureContent>        
-        <StyledFeatureContent>
-          <div>
-            <H2 left color="accent3">Feature Heading</H2>
-            <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
-            <P2>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </P2>
-            <StyledMoreInformation>
-              More Information  >
-            </StyledMoreInformation> 
-          </div>         
-        </StyledFeatureContent>
-      </Grid>
-      <SpaceFeature />
-      <Grid columns="50% 50%" breakAndCenter="900px">      
-        <StyledFeatureContent>
-          <div>
-            <H2 left color="accent3">Feature Heading</H2>
-            <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
-            <P2>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </P2>
-            <StyledMoreInformation>
-              More Information  >
-            </StyledMoreInformation>          
-          </div>
-        </StyledFeatureContent>
-        <StyledFeatureContent>
-          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
-        </StyledFeatureContent>  
-      </Grid>
-      <SpaceFeature />
+      <FeatureInfoRow 
+        imgPosition="left"
+        heading="Feature Heading 1"
+        subHeading="Feature Sub Heading 1"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      />
+      <FeatureInfoRow 
+        imgPosition="right"
+        heading="Feature Heading 2"
+        subHeading="Feature Sub Heading 2"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      />
     </Section>
+
     <Footer />
     <Helmet>
       <script
