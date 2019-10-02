@@ -12,10 +12,9 @@ import H3 from "../components/typography/H3";
 import P2 from "../components/typography/P2";
 import "../main.css";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
-
 import Helmet from 'react-helmet'
 import colors from "../components/style/colors";
+import FeatureImg1 from "../images/calendar.jpg"
 
 const StyledH3 = styled(H3)`
   margin-bottom: 0.5em;
@@ -69,8 +68,7 @@ const IndexPage = () => (
     <Section>
       <Grid columns="50% 50%" breakAndCenter="900px">
         <StyledFeatureContent>
-          <img 
-            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
+          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
         </StyledFeatureContent>        
         <StyledFeatureContent>
           <div>
@@ -100,8 +98,7 @@ const IndexPage = () => (
           </div>
         </StyledFeatureContent>
         <StyledFeatureContent>
-          <img 
-            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
+          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
         </StyledFeatureContent>  
       </Grid>
       <SpaceFeature />
