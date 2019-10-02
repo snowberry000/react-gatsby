@@ -11,6 +11,9 @@ const ButtonWrapper = styled.button`
   font-size: 1.05em;
   outline: none;
   cursor: pointer;
+  :hover{
+    opacity: 0.8;
+  }
   :active {
     filter: brightness(0.8);
   }
@@ -26,6 +29,26 @@ const ButtonWrapper = styled.button`
     background: none;
     border: none;
     color: ${colors.grey};
+  `}
+  ${props =>
+    props.type === "signupwhite" &&
+    `
+    background: none;
+    border: none;
+    color: ${colors.white};
+    background: white;
+    border: 2px solid ${colors.accent1};
+    color: ${colors.accent1};
+    border-radius: 0.4em;
+    padding: 0.6em 1em;
+    font-size: 1.35em;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 100px;
+    :active {
+    filter: brightness(0.8);
+    }
   `}
 `;
 

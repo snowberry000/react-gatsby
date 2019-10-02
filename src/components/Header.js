@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LayoutBlock from "./layout/LayoutBlock";
-import LogoImg from "../images/Logo.png";
+import LogoImg from "../images/Logo.svg";
 import ButtonsRow from "./layout/ButtonsRow";
 import colors from "./style/colors";
 
@@ -30,7 +30,7 @@ const Space = styled.div`
   width: 1.5em;
 `;
 
-const Logo = styled.img`
+const Logo  = styled.img`
   width: 15em;
 `;
 
@@ -73,7 +73,7 @@ const Header = props => {
           <StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Help</StyledSignUpButton>
           <Space />
           <StyledSignUpButton type="secondary" id="login-btn" href="#">Login</StyledSignUpButton>
-          <StyledSignUpButton className="register-btn-header" href="#">Sign Up</StyledSignUpButton>          
+          <StyledSignUpButton className="register-btn-header" href="#">Sign Up</StyledSignUpButton>
         </ButtonsRow>
       </div>
     </HeaderWrapper>
