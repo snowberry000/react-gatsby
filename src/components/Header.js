@@ -66,7 +66,7 @@ const Header = props => {
   return (
     <HeaderWrapper>
       <div className="left">
-        <Logo src={LogoImg} />
+        <a href="https://www.heyagenda.com/"><Logo src={LogoImg} /></a>        
       </div>
       <div className="right">
         <ButtonsRow>
