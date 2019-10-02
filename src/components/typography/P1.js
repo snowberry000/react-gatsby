@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../style/colors";
 
 const P1 = styled.p`
-  font-size: 1.05em;
+  font-size: 1.75em;
   text-align: ${props => (props.center ? "center" : "left")};
   color: ${props => (props.color ? colors[props.color] : colors.darker)};
   margin: 0.3em 0 0.8em;

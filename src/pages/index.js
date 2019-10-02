@@ -10,34 +10,35 @@ import LayoutWrapper from "../components/layout/LayoutWrapper";
 import Section from "../components/layout/Section";
 import SEO from "../components/seo";
 import H1 from "../components/typography/H1";
+import H2 from "../components/typography/H2";
 import H3 from "../components/typography/H3";
+import P1 from "../components/typography/P1";
 import Venues from "../components/Venues";
-import colors from "../components/style/colors";
 import Footer from "../components/Footer";
 
 import "../main.css";
 
 import Helmet from 'react-helmet'
 
-const StyledHeaderContentContainer = styled.div`
-  display: flex;
-  flex-direction: column;  
-`;
-
 const StyledSignUpButton = styled.a`
-  background: white;  
-  border: 2px solid white;
-  color: ${colors.accent1};
+  background: #00A698;
+  border: 2px solid #00A698;
+  color: #fff;
   border-radius: 0.4em;
   padding: 0.6em 1em;
-  font-size: 1.05em;
+  font-size: 1.35em;
   outline: none;
   cursor: pointer;
-  text-decoration: none;  
+  text-decoration: none;
   max-width: 100px;
+  :hover{
+    filter: brightness(0.8);
+  }
   :active {
     filter: brightness(0.8);
-  }    
+  }
+
+
 
   @media screen and (max-width: 850px) {
     align-self: center;
@@ -47,14 +48,15 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Home" />
+    <SEO title="HeyAgenda: All in One Venue Management Software" />
     <Header />
-    <Section bgColor="accent1" height="34em" center>
+    <Section bgColor="accent3" height="30em" left>
       <Grid columns="1fr 22em" breakAndCenter="850px">
-        <StyledHeaderContentContainer>
-          <H1>All in one venue management software</H1>
-          <StyledSignUpButton className="register-btn-signup" href="#">Sign Up</StyledSignUpButton>
-        </StyledHeaderContentContainer>
+          <div style={{ alignItems: "left", justifyContent: "left" }}>
+          <H1>All in One Venue Management Software</H1>
+          <StyledSignUpButton className="register-btn-signup" href="#">Try Our Free Trial 👍</StyledSignUpButton>
+          {/* <p1>No credit card required. Cancel anytime.</p1> */}
+        </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />
         </div>
@@ -76,16 +78,27 @@ const IndexPage = () => (
     <Section>
       <InfoCard />
     </Section>
-    <Section />
+
+    <Section center>
+      <H2 center>Still undecided?</H2>
+      <P1 color="#1B1D20" center>
+        We're here to help, sign up for a demo today.
+      </P1>
+        <div>
+        <StyledSignUpButton type="signupwhite" href="https://heyagenda.youcanbook.me/?noframe=true&skipHeaderFooter=true">Book a Demo ☎️️</StyledSignUpButton>
+        </div>
+    </Section>
+
     <Footer />
+
     <Helmet>
-      <script 
-        type="text/javascript" 
+      <script
+        type="text/javascript"
         src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
         data-widget-mode="login"
         data-popup-selector="#login-btn">
       </script>
-      <script 
+      <script
         type="text/javascript"
         src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
         data-widget-mode="register"
@@ -93,7 +106,7 @@ const IndexPage = () => (
         data-plan-payment-term="month"
         data-plan-uid="dpWrNgWn">
       </script>
-      <script 
+      <script
         type="text/javascript"
         src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
         data-widget-mode="register"
