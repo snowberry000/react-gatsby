@@ -9,16 +9,13 @@ import Grid from "../components/layout/Grid";
 import LayoutWrapper from "../components/layout/LayoutWrapper";
 import Section from "../components/layout/Section";
 import SEO from "../components/seo";
-import A1 from "../components/typography/A1";
-import A2 from "../components/typography/A2";
 import H1 from "../components/typography/H1";
 import H2 from "../components/typography/H2";
 import H3 from "../components/typography/H3";
 import P1 from "../components/typography/P1";
-import P2 from "../components/typography/P2";
-import Li from "../components/typography/P2";
 import Venues from "../components/Venues";
-import colors from "../components/style/colors";
+import Footer from "../components/Footer";
+
 import "../main.css";
 
 import Helmet from 'react-helmet'
@@ -58,7 +55,7 @@ const IndexPage = () => (
           <div style={{ alignItems: "left", justifyContent: "left" }}>
           <H1>All in One Venue Management Software</H1>
           <StyledSignUpButton className="register-btn-signup" href="#">Try Our Free Trial 👍</StyledSignUpButton>
-          <p1>No credit card required. Cancel anytime.</p1>
+          {/* <p1>No credit card required. Cancel anytime.</p1> */}
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Assets.Illustrations.Hero />
@@ -81,43 +78,19 @@ const IndexPage = () => (
     <Section>
       <InfoCard />
     </Section>
+
     <Section center>
-          <H2 center>Still undecided?</H2>
-          <P1 color="#1B1D20" center>
-            We're here to help, sign up for a demo today.
-          </P1>
-            <div>
-            <StyledSignUpButton type="signupwhite" href="https://heyagenda.youcanbook.me/?noframe=true&skipHeaderFooter=true">Book a Demo ☎️️</StyledSignUpButton>
-            </div>
-        </Section>
-    <Section small bgColor="lighter">
-      <Grid columns="1fr 1fr 1fr 1fr">
+      <H2 center>Still undecided?</H2>
+      <P1 color="#1B1D20" center>
+        We're here to help, sign up for a demo today.
+      </P1>
         <div>
-          <P1 strong>Contact Us</P1>
-          <P2 strong><a href="tel:+442030063049">020 3006 3049</a></P2>
-          <A2 strong><a href="mailto:hello@heyagenda.com">hello@heyagenda.com</a></A2>
+        <StyledSignUpButton type="signupwhite" href="https://heyagenda.youcanbook.me/?noframe=true&skipHeaderFooter=true">Book a Demo ☎️️</StyledSignUpButton>
         </div>
-        <div>
-          <P1 strong>Product</P1>
-          <li>How it works</li>
-          <li>Features</li>
-          <li>Pricing</li>
-        </div>
-        <div>
-          <P1 strong>Resources</P1>
-          <li><a href="http://help.heyagenda.com/support/kb#/categories">Help Desk</a></li>
-          <li>Case Studies</li>
-          <li>Blog</li>
-        </div>
-        <div>
-          <P1 strong>Company</P1>
-          <li>About us</li>
-          <li>Terms and Conditions</li>
-          <li>Terms of Use</li>
-          <li>Contact</li>
-        </div>
-      </Grid>
     </Section>
+
+    <Footer />
+
     <Helmet>
       <script
         type="text/javascript"
