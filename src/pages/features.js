@@ -12,10 +12,9 @@ import H3 from "../components/typography/H3";
 import P2 from "../components/typography/P2";
 import "../main.css";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
-
 import Helmet from 'react-helmet'
 import colors from "../components/style/colors";
+import FeatureImg1 from "../images/calendar.jpg"
 
 const StyledH3 = styled(H3)`
   margin-bottom: 0.5em;
@@ -69,18 +68,14 @@ const IndexPage = () => (
     <Section>
       <Grid columns="50% 50%" breakAndCenter="900px">
         <StyledFeatureContent>
-          <img 
-            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
+          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
         </StyledFeatureContent>        
         <StyledFeatureContent>
           <div>
             <H2 left color="accent3">Feature Heading</H2>
             <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
             <P2>
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
-
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </P2>
             <StyledMoreInformation>
               More Information  >
@@ -89,23 +84,22 @@ const IndexPage = () => (
         </StyledFeatureContent>
       </Grid>
       <SpaceFeature />
-      <Grid columns="50% 50%" breakAndCenter="900px">
-        <StyledFeatureContent>
-          <img 
-            src="https://cdn.skedda.com/assets/images-www/features/client-booking-system-w635-23f7abe5aa4567b06fed01a2b48a148c.webp"/>
-        </StyledFeatureContent>        
+      <Grid columns="50% 50%" breakAndCenter="900px">      
         <StyledFeatureContent>
           <div>
             <H2 left color="accent3">Feature Heading</H2>
             <StyledH3 left color="accent3">Feature Sub Heading</StyledH3>
             <P2>
-              Your Skedda calendar is the focal point for your venue's bookings. It provides the perspectives you need to digest all activity at a glance. You can choose to share your unique calendar URL (e.g. https://skedstudios.skedda.com) with the public, or enforce privacy through secure invitation links and logins.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </P2>
             <StyledMoreInformation>
               More Information  >
             </StyledMoreInformation>          
           </div>
         </StyledFeatureContent>
+        <StyledFeatureContent>
+          <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
+        </StyledFeatureContent>  
       </Grid>
       <SpaceFeature />
     </Section>
