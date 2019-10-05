@@ -8,7 +8,7 @@ import A2 from "../components/typography/A2";
 const Footer = () => {
 	return (
 		<Section small bgColor="lighter">
-			<Grid columns="1fr 1fr 1fr 1fr">
+			<Grid columns="repeat(auto-fill, minmax(160px, 1fr));">
 				<div>
 					<P1 strong>Contact Us</P1>
 					<P2 strong><a href="tel:+442030063049">020 3006 3049</a></P2>
