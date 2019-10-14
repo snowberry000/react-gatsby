@@ -66,28 +66,28 @@ const IndexPage = () => (
         imgPosition="left"
         heading="Powerful Integrated Calendar"
         subHeading="Manage your calendar in our easy to use software."
-        urlInfo="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg"
+        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg"
         description="Manage your calendar by Day, Week and Even Month. See all your dates in one easy place. See all upcoming events in one easy to use dashboard."
       />
       <FeatureInfoRow
         imgPosition="right"
         heading="Flawless Venue Management"
         subHeading="See at a glance the status of any booking"
-        urlInfo="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/booking-system.jpg"
+        imgSrc="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/booking-system.jpg"
         description="See the status of any booking with our fully customisable booking tracking system. You can see all enquiries through their lifecycle from Enquiry to Paid. Fully customise to your own workflow by adding in custom statuses."
       />
       <FeatureInfoRow
         imgPosition="left"
         heading="Customer Management"
         subHeading="Powerful Customer Management System"
-        urlInfo="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/customer-management.jpg"
+        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/customer-management.jpg"
         description="Never lose your customers details again because someone lost the piece of paper. Store and keep your customers information up to date. All in our easy to use Customer Management Portal."
       />
       <FeatureInfoRow
         imgPosition="right"
         heading="Invoice Management"
         subHeading="See at the glance the status of any quotation and invoice."
-        urlInfo="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/invoicemangement.jpg"
+        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/invoicemangement.jpg"
         description="At a glance see the status of any invoice, no more sitting in a meeting and the boss asks, has that invoice been paid? Now you'll know by simply filtering by paid and un"
       />
   </Section>

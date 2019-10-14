@@ -45,8 +45,8 @@ const FeatureInfoRow = ({
     heading,
     subHeading,
     description,
-    imgPosition,
-    urlInfo,
+    imgPosition, 
+    imgSrc,   
 }) => {
     return (
         <React.Fragment>
@@ -54,8 +54,8 @@ const FeatureInfoRow = ({
                 {imgPosition === "left" ? (
                     <React.Fragment>
                         <StyledFeatureContent>
-                            <img src={urlInfo} />
-                        </StyledFeatureContent>
+                            <img src={imgSrc} />                            
+                        </StyledFeatureContent>        
                         <StyledFeatureContent>
                         <div>
                             <H2 left color="accent3">{heading}</H2>
@@ -63,25 +63,25 @@ const FeatureInfoRow = ({
                             <P2>{description}</P2>
                             <StyledMoreInformation>
                                 More Information  >
-                            </StyledMoreInformation>
-                        </div>
+                            </StyledMoreInformation> 
+                        </div>         
                         </StyledFeatureContent>
-                    </React.Fragment>
+                      </React.Fragment>
                     ) : (
                         <React.Fragment>
                             <StyledFeatureContent>
-                            <div>
-                                <H2 left color="accent3">{heading}</H2>
-                                <StyledH3 left color="accent3">{subHeading}</StyledH3>
-                                <P2>{description}</P2>
-                                <StyledMoreInformation>
-                                    More Information  >
-                                </StyledMoreInformation>
-                            </div>
+                                <div>
+                                    <H2 left color="accent3">{heading}</H2>
+                                    <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                                    <P2>{description}</P2>
+                                    <StyledMoreInformation>
+                                        More Information  >
+                                    </StyledMoreInformation> 
+                                </div>         
                             </StyledFeatureContent>
                             <StyledFeatureContent>
-                                <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
-                            </StyledFeatureContent>
+                                <img src={imgSrc} />                                
+                            </StyledFeatureContent>        
                         </React.Fragment>
                     )
                 }
