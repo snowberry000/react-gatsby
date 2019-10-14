@@ -45,7 +45,8 @@ const FeatureInfoRow = ({
     heading,
     subHeading,
     description,
-    imgPosition,    
+    imgPosition, 
+    imgSrc,   
 }) => {
     return (
         <React.Fragment>
@@ -53,7 +54,7 @@ const FeatureInfoRow = ({
                 {imgPosition === "left" ? (
                     <React.Fragment>
                         <StyledFeatureContent>
-                            <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
+                            <img src={imgSrc} />                            
                         </StyledFeatureContent>        
                         <StyledFeatureContent>
                         <div>
@@ -79,7 +80,7 @@ const FeatureInfoRow = ({
                             </div>         
                             </StyledFeatureContent>
                             <StyledFeatureContent>
-                                <img src="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg" />
+                                <img src={imgSrc} />                                
                             </StyledFeatureContent>        
                         </React.Fragment>
                     )
