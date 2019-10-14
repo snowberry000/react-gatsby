@@ -25,7 +25,7 @@ const StyledMoreInformation = styled.a`
   color: ${colors.accent3};
   border-radius: 0.4em;
   padding: 0.6em 1em;
-  font-size: 1.05em;
+  font-size: 1.25em;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -66,25 +66,25 @@ const FeatureInfoRow = ({
                             </StyledMoreInformation> 
                         </div>         
                         </StyledFeatureContent>
-                    </React.Fragment>
+                      </React.Fragment>
                     ) : (
-                        <React.Fragment>                            
+                        <React.Fragment>
                             <StyledFeatureContent>
-                            <div>
-                                <H2 left color="accent3">{heading}</H2>
-                                <StyledH3 left color="accent3">{subHeading}</StyledH3>
-                                <P2>{description}</P2>
-                                <StyledMoreInformation>
-                                    More Information  >
-                                </StyledMoreInformation> 
-                            </div>         
+                                <div>
+                                    <H2 left color="accent3">{heading}</H2>
+                                    <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                                    <P2>{description}</P2>
+                                    <StyledMoreInformation>
+                                        More Information  >
+                                    </StyledMoreInformation> 
+                                </div>         
                             </StyledFeatureContent>
                             <StyledFeatureContent>
                                 <img src={imgSrc} />                                
                             </StyledFeatureContent>        
                         </React.Fragment>
                     )
-                }                
+                }
             </Grid>
             <SpaceFeature />
         </React.Fragment>

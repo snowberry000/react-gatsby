@@ -7,7 +7,7 @@ const H3 = styled.h3`
   color: ${props => (props.color ? colors[props.color] : colors.darker)};
   margin: 0.1em 0 1.3em;
   font-weight: 600;
-  line-height: 1.55;
+  line-height: 1.25;
   @media (max-width: 640px) {
     font-size: 1.6em;
   }

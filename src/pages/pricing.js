@@ -54,7 +54,7 @@ const IndexPage = () => (
     <SEO title="HeyAgenda: All in One Venue Management Software" />
     <Header />
     <Section bgColor="accent3" height="20em" center>
-      <Grid columns="1fr 0em" >
+        <Grid columns="100" breakAndCenter="900px">
           <div>
           <H1 center>Pricing</H1>
         </div>
