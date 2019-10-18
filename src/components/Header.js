@@ -10,6 +10,10 @@ const HeaderWrapper = styled.div`
   display: flex;
   background: white;
   overflow: hidden;
+  @media (max-width: 479px) {
+    flex-direction: column;    
+  }  
+
   div.left {
     flex: 0 0.8 auto;
     display: flex;
@@ -21,7 +25,14 @@ const HeaderWrapper = styled.div`
         width: 10em;
       }
     }
-   }
+    @media (max-width: 479px) {
+      padding: 1em 2em;
+      justify-content: center;
+      img {
+        width: 15em;
+      }
+    }    
+  }
   div.right {
     flex: 0 0.5 auto;
     display: flex;
@@ -29,6 +40,10 @@ const HeaderWrapper = styled.div`
     justify-content: flex-end;
     @media (max-width: 600px) {
       padding: 0.5em 0.5em;     
+    }
+    @media (max-width: 479px) {
+      padding: 0 2em 1em;
+      justify-content: center;
     }
   }
 `;
