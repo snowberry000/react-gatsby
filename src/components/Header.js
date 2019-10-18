@@ -9,25 +9,35 @@ const HeaderWrapper = styled.div`
   ${LayoutBlock}
   display: flex;
   background: white;
+  overflow: hidden;
   div.left {
     flex: 0 0.8 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
+    @media (max-width: 600px) {
+      padding: 0.5em 0.5em;
+      img {
+        width: 10em;
+      }
+    }
+   }
   div.right {
     flex: 0 0.5 auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    @media (max-width: 700px) {
-      display: none;
+    @media (max-width: 600px) {
+      padding: 0.5em 0.5em;     
     }
   }
 `;
 
 const Space = styled.div`
   width: 1.5em;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Logo  = styled.img`
@@ -73,7 +83,7 @@ const Header = props => {
           <StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Help</StyledSignUpButton>
           <Space />
           <StyledSignUpButton type="secondary" id="login-btn" href="#">Login</StyledSignUpButton>
-          <StyledSignUpButton className="register-btn-header" href="#">Sign Up</StyledSignUpButton>
+          <StyledSignUpButton className="register-btn-header register-btn-signup" href="#">Sign Up</StyledSignUpButton>
         </ButtonsRow>
       </div>
     </HeaderWrapper>

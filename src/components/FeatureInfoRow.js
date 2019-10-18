@@ -42,53 +42,53 @@ const SpaceFeature = styled.div`
 `;
 
 const FeatureInfoRow = ({
-    heading,
-    subHeading,
-    description,
-    imgPosition, 
-    imgSrc,   
+  heading,
+  subHeading,
+  description,
+  imgPosition,
+  imgSrc,
 }) => {
-    return (
-        <React.Fragment>
-            <Grid columns="50% 50%" breakAndCenter="900px">
-                {imgPosition === "left" ? (
-                    <React.Fragment>
-                        <StyledFeatureContent>
-                            <img src={imgSrc} />                            
-                        </StyledFeatureContent>        
-                        <StyledFeatureContent>
-                        <div>
-                            <H2 left color="accent3">{heading}</H2>
-                            <StyledH3 left color="accent3">{subHeading}</StyledH3>
-                            <P2>{description}</P2>
-                            <StyledMoreInformation>
-                                More Information  >
-                            </StyledMoreInformation> 
-                        </div>         
-                        </StyledFeatureContent>
-                      </React.Fragment>
-                    ) : (
-                        <React.Fragment>
-                            <StyledFeatureContent>
-                                <div>
-                                    <H2 left color="accent3">{heading}</H2>
-                                    <StyledH3 left color="accent3">{subHeading}</StyledH3>
-                                    <P2>{description}</P2>
-                                    <StyledMoreInformation>
-                                        More Information  >
-                                    </StyledMoreInformation> 
-                                </div>         
-                            </StyledFeatureContent>
-                            <StyledFeatureContent>
-                                <img src={imgSrc} />                                
-                            </StyledFeatureContent>        
-                        </React.Fragment>
-                    )
-                }
-            </Grid>
-            <SpaceFeature />
-        </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <Grid columns="50% 50%" breakAndCenter="900px">
+        {imgPosition === "left" ? (
+          <React.Fragment>
+            <StyledFeatureContent>
+              <img src={imgSrc} />
+            </StyledFeatureContent>
+            <StyledFeatureContent>
+              <div>
+                <H2 left color="accent3">{heading}</H2>
+                <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                <P2>{description}</P2>
+                <StyledMoreInformation>
+                  More Information  >
+                            </StyledMoreInformation>
+              </div>
+            </StyledFeatureContent>
+          </React.Fragment>
+        ) : (
+            <React.Fragment>
+              <StyledFeatureContent>
+                <div>
+                  <H2 left color="accent3">{heading}</H2>
+                  <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                  <P2>{description}</P2>
+                  <StyledMoreInformation>
+                    More Information  >
+                                    </StyledMoreInformation>
+                </div>
+              </StyledFeatureContent>
+              <StyledFeatureContent>
+                <img src={imgSrc} />
+              </StyledFeatureContent>
+            </React.Fragment>
+          )
+        }
+      </Grid>
+      <SpaceFeature />
+    </React.Fragment>
+  )
 }
 
 export default FeatureInfoRow;
