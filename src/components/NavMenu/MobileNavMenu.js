@@ -79,9 +79,8 @@ const StyledSignUpButton = styled.a`
 const MobileNavMenu = (props) => {
 	return (
 		<NavBarMobile>
-			<NavBarMobileContent className={props.open ? "expanded" : ""}>
-				<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">Home</StyledSignUpButton>
-				<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">Features</StyledSignUpButton>
+			<NavBarMobileContent className={props.open ? "expanded" : ""}>				
+				<StyledSignUpButton href="/features">Features</StyledSignUpButton>
 				<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">Integrations</StyledSignUpButton>
 				<DropDown>
 					<StyledSignUpButton className="menu-item">
@@ -98,29 +97,9 @@ const MobileNavMenu = (props) => {
 								Sports Venue
 							</StyledSignUpButton>
 						</div>
-						{/* <li>
-							<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">
-								Professional Studios
-							</StyledSignUpButton>
-						</li>
-						<li>
-							<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">
-								Coworking Spaces
-							</StyledSignUpButton>
-						</li>
-						<li>
-							<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">
-								Classrooms and Labs
-							</StyledSignUpButton>
-						</li>
-						<li>
-							<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">
-							Consulting Rooms
-							</StyledSignUpButton>
-						</li> */}
 					</div>
-				</DropDown>				
-				<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">Pricing</StyledSignUpButton>
+				</DropDown>
+				<StyledSignUpButton href="/pricing">Pricing</StyledSignUpButton>
 				<StyledSignUpButton href="http://help.heyagenda.com/support/kb#/categories">More</StyledSignUpButton>
 				<StyledSignUpButton id="login-btn" href="#">Login</StyledSignUpButton>
 				<StyledSignUpButton className="register-btn-header register-btn-signup" href="#">Sign Up</StyledSignUpButton>
