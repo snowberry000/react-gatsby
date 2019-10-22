@@ -140,27 +140,3 @@ mix-blend-mode: lighten;
 border-radius: 9px;
 transform: rotate(71.5deg);
 }
-
-.u-hamburger__inner, .u-hamburger__inner::after, .u-hamburger__inner::before {
-  width: 1.5625rem;
-  height: .125rem;
-  background-color: #6B50C8;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: .3s;
-  transition-timing-function: ease;
-}
-
-
-.u-hamburger__inner::before {
-  content: " ";
-  top: .375rem;
-  transition-property: transform,opacity;
-  transition-duration: .3s;
-  transition-timing-function: ease;
-}
-
-.u-hamburger__inner::after {
-  content: " ";
-  top: .75rem;
-}
