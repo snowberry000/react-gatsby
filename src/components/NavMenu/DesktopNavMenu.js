@@ -10,15 +10,15 @@ const NavBar = styled(ButtonsRow)`
   padding: 0 2em;
   z-index: 1;
   align-items: center;
-  @media (max-width: 1199px) {
-    justify-content: center;
-    margin: 0 auto;
-  }
 
   .register-btn-signup {
     margin: 1em;
 	}
-	
+  
+  @media (max-width: 899px) {
+    padding-left: 0;
+  }
+
 	@media (max-width: 799px) {
 		display: none;
 	}
@@ -91,14 +91,23 @@ const StyledSignUpButton = styled.a`
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
+  @media (max-width: 999px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @media (max-width: 899px) {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
 `;
 
 const DesktopNavMenu = () => {
 
 	return (
-		<NavBar>
-			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Home</StyledSignUpButton>
-			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Features</StyledSignUpButton>
+		<NavBar>			
+			<StyledSignUpButton type="tertiary" href="/features">Features</StyledSignUpButton>
 			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Integrations</StyledSignUpButton>
 			<StyledSignUpButton className="has-sub-menu" type="tertiary">
 				Examples <FontAwesomeIcon icon={faAngleDown} />
@@ -111,8 +120,7 @@ const DesktopNavMenu = () => {
 					<li>Consulting Rooms</li>
 				</ul>
 			</StyledSignUpButton>
-			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Pricing</StyledSignUpButton>
-			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">More</StyledSignUpButton>
+			<StyledSignUpButton type="tertiary" href="/pricing">Pricing</StyledSignUpButton>
 			<StyledSignUpButton type="tertiary" id="login-btn" href="#">Login</StyledSignUpButton>
 			<StyledSignUpButton className="register-btn-header register-btn-signup" href="#">Sign Up</StyledSignUpButton>
 		</NavBar>

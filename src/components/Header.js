@@ -8,9 +8,6 @@ const HeaderWrapper = styled.div`
   display: flex;
   background: white;  
   position: relative;
-  @media (max-width: 1199px) {
-    flex-direction: column;
-  }
   @media (max-width: 799px) {
     flex-direction: row;
     align-items: center;
@@ -23,10 +20,6 @@ const LogoContainer = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 1em 2em;
-  @media (max-width: 1199px) {
-    justify-content: center;
-    padding-bottom: 0;
-  }
 
   @media (max-width: 799px) {
     justify-content: flex-start;
