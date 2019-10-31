@@ -116,14 +116,6 @@ const IndexPage = () => (
         type="text/javascript"
         src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
         data-widget-mode="register"
-        data-popup-selector=".register-btn-header"
-        data-plan-payment-term="month"
-        data-plan-uid="dpWrNgWn">
-      </script>
-      <script
-        type="text/javascript"
-        src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
-        data-widget-mode="register"
         data-popup-selector=".register-btn-signup"
         data-plan-payment-term="month"
         data-plan-uid="dpWrNgWn">
