@@ -16,7 +16,6 @@ const Footer = () => {
 				</div>
 				<div>
 					<P1 strong>Product</P1>
-					<li><a href="/how-it-works">How it works</a></li>
 					<li><a href="/features">Features</a></li>
 					<li><a href="/pricing">Pricing</a></li>
 				</div>

@@ -90,7 +90,8 @@ const IndexPage = () => (
         data-popup-selector=".register-btn-signup"
         data-plan-payment-term="month"
         data-plan-uid="dpWrNgWn">
-      </script>    </Helmet>
+      </script>
+    </Helmet>
   </LayoutWrapper>
 );
 

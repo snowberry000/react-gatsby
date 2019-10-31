@@ -50,6 +50,7 @@ const IndexPage = () => (
       <Grid columns="100" breakAndCenter="900px">
         <div>
           <H1 center>Our Features</H1>
+          <h2 class="white-center">Features you'll love, requested by people like you.</h2>
         </div>
       </Grid>
     </Section>
@@ -84,7 +85,7 @@ const IndexPage = () => (
       />
     </Section>
     <Section bgColor="accent3" height="20em" center >
-      <Grid columns="1fr 1em" breakAndCenter="850px">
+      <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
           <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
         </div>

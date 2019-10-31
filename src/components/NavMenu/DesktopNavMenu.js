@@ -14,7 +14,7 @@ const NavBar = styled(ButtonsRow)`
   .register-btn-signup {
     margin: 1em;
 	}
-  
+
   @media (max-width: 899px) {
     padding-left: 0;
   }
@@ -34,7 +34,7 @@ const StyledSignUpButton = styled.a`
   font-size: 1.05em;
   outline: none;
   cursor: pointer;
-  text-decoration: none;  
+  text-decoration: none;
   :active {
     filter: brightness(0.8);
   }
@@ -58,10 +58,10 @@ const StyledSignUpButton = styled.a`
     align-items: center;
 
     .fa-angle-down {
-      margin-left: 5px;    
+      margin-left: 5px;
       transform: translateY(2px);
     }
-  
+
     .dropdown {
       position: absolute;
       display: none;
@@ -79,14 +79,14 @@ const StyledSignUpButton = styled.a`
         }
       }
     }
-  
+
     &:hover {
       .dropdown {
         display: block;
       }
     }
-  } 
-  
+  }
+
   @media (max-width: 1280px) {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -106,9 +106,9 @@ const StyledSignUpButton = styled.a`
 const DesktopNavMenu = () => {
 
 	return (
-		<NavBar>			
+		<NavBar>
 			<StyledSignUpButton type="tertiary" href="/features">Features</StyledSignUpButton>
-			<StyledSignUpButton type="tertiary" href="http://help.heyagenda.com/support/kb#/categories">Integrations</StyledSignUpButton>
+			<StyledSignUpButton type="tertiary" href="/integrations">Integrations</StyledSignUpButton>
 			<StyledSignUpButton className="has-sub-menu" type="tertiary">
 				Examples <FontAwesomeIcon icon={faAngleDown} />
 				<ul className="dropdown">

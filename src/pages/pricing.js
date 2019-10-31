@@ -56,7 +56,8 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center>
         <Grid columns="100" breakAndCenter="900px">
           <div>
-          <H1 center>Pricing</H1>
+          <H1 center>Simple Pricing</H1>
+          <h2 class="white-center">Grow with the right plan & bolt-on features you need.</h2>
         </div>
       </Grid>
     </Section>
@@ -74,10 +75,9 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section bgColor="accent3" height="20em" center >
-      <Grid columns="1fr 1em" breakAndCenter="850px">
-          <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">❝Our Mission is to make event booking an enjoyable experience for the guest and the host. To make life simplier and remove administrative burden.❞
-          </h2>
+      <Grid columns="100%">
+          <div>
+          <h3 class="white-text">No Lengthy Contracts</h3>
         </div>
       </Grid>
     </Section>

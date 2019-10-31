@@ -54,7 +54,9 @@ const IndexPage = () => (
       <Grid columns="1fr 22em" breakAndCenter="850px">
           <div style={{ alignItems: "left", justifyContent: "left" }}>
           <H1>All in One Venue Management Software</H1>
-          <StyledSignUpButton className="register-btn-signup" href="#">Try Our Free Trial 👍</StyledSignUpButton>
+          <h2 class="white-center-margin">Everything you need to get your venue in order and make your life easier - All in one simple yet powerful platform. </h2>
+
+          <StyledSignUpButton className="register-btn-signup" href="#">👉14-Day Free Trial 👈</StyledSignUpButton>
           {/* <p1>No credit card required. Cancel anytime.</p1> */}
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>

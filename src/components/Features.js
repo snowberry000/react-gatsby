@@ -35,7 +35,7 @@ const features = [
   { text: "Invoice Management", icon: <Assets.Icons.Management /> },
   { text: "Room Management", icon: <Assets.Icons.Room /> },
   { text: "Quotation Management", icon: <Assets.Icons.Quotation /> },
-  { text: "Online Payments (coming soon)", icon: <Assets.Icons.Payments /> },
+  { text: "Accept Online Payments", icon: <Assets.Icons.Payments /> },
   { text: "Integrations (coming soon)", icon: <Assets.Icons.Integrations /> }
 ];
 

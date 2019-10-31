@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../style/colors";
 
 const H2 = styled.h2`
-  font-size: 2.2em;
+  font-size: 2.0em;
   text-align: ${props => (props.center ? "center" : "left")};
   color: ${props => (props.color ? colors[props.color] : colors.ultra_dark)};
   margin: 0.1em 0 0.25em;

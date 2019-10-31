@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Assets from "../components/Assets";
-import BuildingsStrip from "../components/BuildingsStrip";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
@@ -9,16 +8,10 @@ import Grid from "../components/layout/Grid";
 import LayoutWrapper from "../components/layout/LayoutWrapper";
 import Section from "../components/layout/Section";
 import SEO from "../components/seo";
-import A1 from "../components/typography/A1";
-import A2 from "../components/typography/A2";
 import H1 from "../components/typography/H1";
 import H2 from "../components/typography/H2";
-import H3 from "../components/typography/H3";
 import P1 from "../components/typography/P1";
-import P2 from "../components/typography/P2";
-import Li from "../components/typography/P2";
-import Venues from "../components/Venues";
-import colors from "../components/style/colors";
+import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
 
@@ -54,30 +47,28 @@ const IndexPage = () => (
     <SEO title="HeyAgenda: All in One Venue Management Software" />
     <Header />
     <Section bgColor="accent3" height="20em" center>
-      <Grid columns="1fr 0em" >
-          <div>
-          <H1 center>How it works</H1>
+      <Grid columns="100" breakAndCenter="900px">
+        <div>
+          <H1 center>Integrations</H1>
+          <h2 class="white-center">Connect the tools you love and Speed up the Venue Booking Process.</h2>
         </div>
       </Grid>
     </Section>
-    <Section height="20em" left>
-      <Grid columns="1fr 39em" breakAndCenter="850px">
-        <div class="div1">
-        <h2>Who are we?</h2>
-        </div>
-      <div class="div2">
-        <p>We're on a relentless pursuit to make the events industry easier for everyone. We're not just solving problems by using software, but we're trying to make the events industry more accessible for everyone.</p>
-        <p>In 2016, We started off by creating <a href="https://www.justvenue.com">Just Venue</a>, an Online Venue Booking Platform to help customers find and book space for free. We then wanted to help our Venues Manage these bookings more efficiently and created Hey Agenda, an Online Venue Management Software</p>
-        <p>We created this to solve the needs of our hosts, to make their lives easier and make the booking process better for everyone. We want you to cut out the admin tasks and go back to what you enjoy, putting on events and attending to customers.</p>
-        <p>But we’re not stopping there. This is just the begining..</p>
-      </div>
-      </Grid>
+    <Section>
+      <FeatureInfoRow
+        imgPosition="left"
+        heading="Stripe Payments"
+        subHeading="Accept Online Payments for Invoices"
+        imgSrc="https://s8333.pcdn.co/wp-content/uploads/edd/2019/03/stripe-product-image.png"
+        description="Hey Agenda + Stripe: We’ve partnered with Stripe to help businesses accept online payments. We allow you to generate an invoice to a customer and for them to be able to pay that invoice online."
+      />
     </Section>
     <Section bgColor="accent3" height="20em" center >
-      <Grid columns="1fr 1em" breakAndCenter="850px">
-          <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">❝Our Mission is to make event booking an enjoyable experience for the guest and the host. To make life simplier and remove administrative burden.❞
-          </h2>
+      <Grid columns="100%">
+        <div style={{ alignItems: "center", justifyContent: "center style" }}>
+          <h3 class="white-text">Don't see the Integrations you're looking for?</h3>
+          <h3 class="white-text">Please contact us via the contact form. </h3>
+          <h3 class="white-text">Our Team are working hard to build more Integrations now.</h3>
         </div>
       </Grid>
     </Section>
@@ -93,15 +84,15 @@ const IndexPage = () => (
       <InfoCard />
     </Section>
     <Section center>
-          <H2 center>Still undecided?</H2>
-          <P1 color="#1B1D20" center>
-            We're here to help, sign up for a demo today.
+      <H2 center>Still undecided?</H2>
+      <P1 color="#1B1D20" center>
+        We're here to help, sign up for a demo today.
           </P1>
-            <div>
-            <StyledSignUpButton type="signupwhite" href="https://heyagenda.youcanbook.me/?noframe=true&skipHeaderFooter=true">Book a Demo ☎️️</StyledSignUpButton>
-            </div>
-        </Section>
-      <Footer />
+      <div>
+        <StyledSignUpButton type="signupwhite" href="https://heyagenda.youcanbook.me/?noframe=true&skipHeaderFooter=true">Book a Demo ☎️️</StyledSignUpButton>
+      </div>
+    </Section>
+    <Footer />
     <Helmet>
       <script
         type="text/javascript"
