@@ -15,7 +15,7 @@ import H3 from "../components/typography/H3";
 import P1 from "../components/typography/P1";
 import Venues from "../components/Venues";
 import Footer from "../components/Footer";
-import LaptopImg from "../../assets/illustrations/Laptop.svg";
+import LaptopBottomImg from "../images/Laptop-bottom.png";
 import { Player } from 'video-react';
 import 'video-react/dist/video-react.css';
 
@@ -47,6 +47,35 @@ const StyledSignUpButton = styled.a`
     align-self: center;
     margin-top: 1rem;
   }
+`;
+
+const VideoContainer = styled.div`
+  position: relative;
+  width: 88%;
+  margin: 0 auto;
+  border-top: 1.8rem solid #062840;
+  border-left: 1rem solid #062840;
+  border-right: 1rem solid #062840;
+  border-bottom: 1.2rem solid #062840;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: calc(-0.6rem - 8px);
+    position: absolute;
+    left: calc(50% - 5px);
+    background-color: black;
+  }
+`;
+const StyledPlayer = styled(Player)`
+`;
+
+const LaptopBottom = styled.img`
+  width: 100%;
 `;
 
 const IndexPage = () => (
@@ -81,10 +110,12 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section>
-    <Player>
-      <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-    </Player>
-      <LaptopImg />
+      <VideoContainer>        
+        <StyledPlayer>
+          <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+        </StyledPlayer>
+      </VideoContainer>    
+      <LaptopBottom src={LaptopBottomImg} />      
       <H3 center>See all product features</H3>
     </Section>
     <Section>
