@@ -36,7 +36,7 @@ const LaptopVideoPlayer = ({videoUrl}) => {
 	return (
 		<React.Fragment>
 			<VideoContainer>
-				<Player autoPlay muted><source src={videoUrl}/></Player>
+				<Player autoPlay loop={true} muted><source src={videoUrl}/></Player>
 			</VideoContainer>
 			<LaptopBottom src={LaptopBottomImg} />
 			<H3 center>See all product features</H3>
