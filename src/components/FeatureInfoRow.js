@@ -16,6 +16,9 @@ const StyledFeatureContent = styled.div`
   align-items: center;
   img {
     width: 100%;
+    background-color: #062840;
+    padding: 1rem;
+    border-radius: .5rem;
   }
 `;
 
@@ -58,8 +61,8 @@ const FeatureInfoRow = ({
             </StyledFeatureContent>
             <StyledFeatureContent>
               <div>
-                <H2 left color="accent3">{heading}</H2>
-                <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                <H2 left color="rgb(36, 39, 44)">{heading}</H2>
+                <StyledH3 left color="rgb(36, 39, 44)">{subHeading}</StyledH3>
                 <P2>{description}</P2>
                 <StyledMoreInformation>
                   More Information  >
@@ -71,8 +74,8 @@ const FeatureInfoRow = ({
             <React.Fragment>
               <StyledFeatureContent>
                 <div>
-                  <H2 left color="accent3">{heading}</H2>
-                  <StyledH3 left color="accent3">{subHeading}</StyledH3>
+                  <H2 left color="rgb(36, 39, 44)">{heading}</H2>
+                  <StyledH3 left color="rgb(36, 39, 44)">{subHeading}</StyledH3>
                   <P2>{description}</P2>
                   <StyledMoreInformation>
                     More Information  >

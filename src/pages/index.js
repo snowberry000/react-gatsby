@@ -15,6 +15,9 @@ import H3 from "../components/typography/H3";
 import P1 from "../components/typography/P1";
 import Venues from "../components/Venues";
 import Footer from "../components/Footer";
+import LaptopImg from "../../assets/illustrations/Laptop.svg";
+import { Player } from 'video-react';
+import 'video-react/dist/video-react.css';
 
 import "../main.css";
 
@@ -56,7 +59,7 @@ const IndexPage = () => (
           <H1>All in One Venue Management Software</H1>
           <h2 class="white-center-margin">Everything you need to get your venue in order and make your life easier - All in one simple yet powerful platform. </h2>
 
-          <StyledSignUpButton className="register-btn-signup" href="#">👉14-Day Free Trial 👈</StyledSignUpButton>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
           {/* <p1>No credit card required. Cancel anytime.</p1> */}
         </div>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -76,6 +79,13 @@ const IndexPage = () => (
           <Assets.Illustrations.BookingFlow />
         </div>
       </Grid>
+    </Section>
+    <Section>
+    <Player>
+      <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </Player>
+      <LaptopImg />
+      <H3 center>See all product features</H3>
     </Section>
     <Section>
       <InfoCard />

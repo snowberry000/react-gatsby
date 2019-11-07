@@ -61,19 +61,73 @@ const IndexPage = () => (
         </div>
       </Grid>
     </Section>
-    <Section height="20em" left>
-      <Grid columns="1fr 39em" breakAndCenter="850px">
-        <div class="div1">
-        <h2>Who are we?</h2>
-        </div>
-      <div class="div2">
-        <p>We're on a relentless pursuit to make the events industry easier for everyone. We're not just solving problems by using software, but we're trying to make the events industry more accessible for everyone.</p>
-        <p>In 2016, We started off by creating <a href="https://www.justvenue.com">Just Venue</a>, an Online Venue Booking Platform to help customers find and book space for free. We then wanted to help our Venues Manage these bookings more efficiently and created Hey Agenda, an Online Venue Management Software</p>
-        <p>We created this to solve the needs of our hosts, to make their lives easier and make the booking process better for everyone. We want you to cut out the admin tasks and go back to what you enjoy, putting on events and attending to customers.</p>
-        <p>But we’re not stopping there. This is just the begining..</p>
-      </div>
-      </Grid>
-    </Section>
+    <Section>
+    <div class="pricing-table">
+  <div class="pricing-box">
+    <h2>Single Venue</h2>
+    <span class="price">Free Lifetime</span>
+    <p class="description">1 Space FREE</p>
+    <span class="pricing-table-divider"></span>
+    <a class="btn" href="#"><b>Sign Up</b></a>
+    <span class="pricing-table-divider"></span>
+    <ul>
+    <li>✅Unlimited Bookings</li>
+    <li>✅Custom Booking Colours</li>
+    <li>✅Day, Week, Month Views</li>
+    <li>✅Custom Branding Colours</li>
+    <li>✅White-Labelling on Emails</li>
+    <li>✅10 Years Data Retention</li>
+    <li>✅Phone, Video and Chat Support</li>
+    <li>✅Integrations 1000+ Apps</li>
+    <li>✅Payments With Stripe</li>
+    <li>✅Set-up Fee Included</li>
+    </ul>
+    See Full Feature List
+  </div>
+  <div class="pricing-box">
+    <h2>Small to Medium</h2>
+    <span class="price">£1.66/Per Day</span>
+    <p class="description">2-10 Spaces</p>
+    <span class="pricing-table-divider"></span>
+    <a class="btn" href="#"><b>Sign Up</b></a>
+    <span class="pricing-table-divider"></span>
+    <ul>
+    <li>✅Unlimited Bookings</li>
+    <li>✅Custom Booking Colours</li>
+    <li>✅Day, Week, Month Views</li>
+    <li>✅Custom Branding Colours</li>
+    <li>✅White-Labelling on Emails</li>
+    <li>✅10 Years Data Retention</li>
+    <li>✅Phone, Video and Chat Support</li>
+    <li>✅Integrations 1000+ Apps</li>
+    <li>✅Payments With Stripe</li>
+    <li>✅Set-up Fee Included</li>
+    </ul>
+    See Full Feature List
+  </div>
+  <div class="pricing-box pricing-table-best">
+    <h2>Multi-Site</h2>
+    <span class="price">Custom Pricing</span>
+    <p class="description">Unlimited Spaces</p>
+    <span class="pricing-table-divider"></span>
+    <a class="btn" href="#"><b>Sign Up</b></a>
+    <span class="pricing-table-divider"></span>
+    <ul>
+    <li>✅Unlimited Bookings</li>
+    <li>✅Custom Booking Colours</li>
+    <li>✅Day, Week, Month Views</li>
+    <li>✅Custom Branding Colours</li>
+    <li>✅White-Labelling on Emails</li>
+    <li>✅10 Years Data Retention</li>
+    <li>✅Phone, Video and Chat Support</li>
+    <li>✅Integrations 1000+ Apps</li>
+    <li>✅Payments With Stripe</li>
+    <li>✅Set-up Fee Included</li>
+    </ul>
+    See Full Feature List
+  </div>
+</div>
+</Section>
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
           <div>

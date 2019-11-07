@@ -14,7 +14,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopImg from "../../assets/illustrations/Laptop.svg";
 
 import Helmet from 'react-helmet'
 
@@ -50,13 +49,10 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Our Features</H1>
-          <h2 class="white-center">Features you'll love, requested by people like you.</h2>
+          <H1 center>Meeting Room Scheduling Software </H1>
+          <h2 class="white-center">Mange your Meeting Rooms easier and faster than ever before. </h2>
         </div>
       </Grid>
-    </Section>
-    <Section>
-      <LaptopImg />
     </Section>
     <Section>
       <FeatureInfoRow
