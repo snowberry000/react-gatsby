@@ -14,7 +14,7 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopImg from "../../assets/illustrations/Laptop.svg";
+import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -56,7 +56,7 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section>
-      <LaptopImg />
+      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
     </Section>
     <Section>
       <FeatureInfoRow

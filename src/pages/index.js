@@ -77,7 +77,7 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
     </Section>
     <Section>
       <InfoCard />
