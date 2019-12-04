@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,31 +45,45 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Sports Venue Booking Management Software" SEO description="Specifically Designed Sports Venue & Space Management Software - Everything organised in one place, no double bookings, accept payments online -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Sports Facility Scheduling Software </H1>
+          <h2 class="white-center">Manage your Sports Facilitys more efficiently and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Sports Venues.</H2>
+      <p>Managing sporting facilities and centres has to be up there with one of the hardest types of venues to manage. You have courts, fields or pitches and everyone wants to book at the same time. You're trying to keep the facility moving. Sound familiar? Have no fear. We are here to help.</p>
+      <p>Sporting facilities and centres love using Hey Agenda to manage their outdoor courts, football pitches, outdoor track and fields, indoor multi-purpose courts, gyms, cages, and swimming pools.</p>
+      <p>Our software is a really simple but powerful platform. It's super easy and no staff training and no difficult or hard software to understand. It takes our sports facilities on average about 7 minutes to set up the system and take their first booking.</p>
+      <p>So what are you waiting for? Give our 14 days free no-obligation trial a go today. </p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Product-Pages/sports-venue-management-software.jpg" width="100%" alt="Sports Facility Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Sports Facility Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
         heading="Powerful Integrated Calendar"
-        subHeading="Manage your calendar in our easy to use software."
-        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg"
-        description="Manage your calendar by Day, Week and Even Month. See all your spaces in one easy place. See all upcoming events in one easy to use dashboard."
+        subHeading="All your sports facility calendars in one easy to use view. By Court, Pitch or Pool."
+        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Sports-Images/Sports-Images/sports-centre-software-mangement-software.png"
+        description="Manage your courts, football pitches, outdoor track and fields, indoor multi-purpose courts, gyms, cages, and swimming pools calendars in our easy to use software.  Manage your calendar by Day, Week and Even Month. See all your spaces in one easy place. See all upcoming events in one easy to use dashboard."
       />
       <FeatureInfoRow
         imgPosition="right"
-        heading="Flawless Venue Management"
-        subHeading="See at a glance the status of any booking"
+        heading="Flawless Booking Management"
+        subHeading="See at a glance the status of any booking."
         imgSrc="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/booking-system.jpg"
         description="See the status of any booking with our fully customisable booking tracking system. You can see all enquiries through their lifecycle from Enquiry to Paid. Fully customise to your own workflow by adding in custom statuses."
       />
@@ -92,7 +105,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your sports facilities & spaces more efficiently and faster than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

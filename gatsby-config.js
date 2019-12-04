@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `JustVenue CRM`,
+    title: `Hey Agenda`,
     description: `Manage all your venues and spaces in one easy to use the platform. Get paid on time and live a stress-free life.`,
     author: `@justvenue`
   },

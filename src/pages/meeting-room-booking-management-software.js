@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,38 +45,51 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Meeting Room Venue Management Software" SEO description="Specifically Designed Meeting Room & Venue Management Software - Everything organised in one place, no double bookings, accept payments online -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Meeting Room Scheduling Software </H1>
+          <h2 class="white-center">Manage your Meeting Rooms easier and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Meeting Rooms and Spaces.</H2>
+      <p>Trying to schedule space in a busy office can be near impossible, shared Google Calendars don’t work, the old paper diary in the office is not fit for purpose and you often double book and people stand awkwardly outside the door not knowing if they should chap to disturb the meeting, am I right? Well I say no more.</p>
+      <p>Our Venue Management Software has been specifically designed to manage your spaces better, easier and quicker. Each user can login to your private booking calendar and book a room </p>
+      <p>Specifically designed Venue and Meeting Room Management Software - Hey Agenda can help you manage your most important assets better - your meeting rooms.</p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://s3-eu-west-2.amazonaws.com/pureoffice--live/wp-content/uploads/2019/05/14135313/nottingham-meeting-room.png" width="100%" alt="Meeting Room Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Meeting Room Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
-        heading="Powerful Integrated Calendar"
-        subHeading="Manage your calendar in our easy to use software."
-        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg"
-        description="Manage your calendar by Day, Week and Even Month. See all your spaces in one easy place. See all upcoming events in one easy to use dashboard."
+        heading="Powerful Integrated Meeting Room Calendar"
+        subHeading="Manage all your meeting room calendars in our easy to use software."
+        imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Meeting-Spaces/meeting-room-management-software-venue-booking-system.png"
+        description="See all your meeting room calendars in one easy to use software.  No staff training is required and no complicated software to learn.  You can manage all your spaces by day, week, month and see all the bookings together."
       />
       <FeatureInfoRow
         imgPosition="right"
-        heading="Flawless Venue Management"
-        subHeading="See at a glance the status of any booking"
+        heading="Flawless Booking & Venue Management"
+        subHeading="See at a glance the status of any booking."
         imgSrc="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/booking-system.jpg"
         description="See the status of any booking with our fully customisable booking tracking system. You can see all enquiries through their lifecycle from Enquiry to Paid. Fully customise to your own workflow by adding in custom statuses."
       />
       <FeatureInfoRow
         imgPosition="left"
         heading="Customer Management"
-        subHeading="Powerful Customer Management System"
+        subHeading="Powerful Customer Management System."
         imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/customer-management.jpg"
         description="Never lose your customers details again because someone lost the piece of paper. Store and keep your customers information up to date. All in our easy to use Customer Management Portal."
       />
@@ -92,7 +104,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your Meeting Spaces better and faster than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

@@ -51,7 +51,7 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="HeyAgenda: All in One Venue Management Software" />
+    <SEO title="Pricing Information" />
     <Header />
     <Section bgColor="accent3" height="20em" center>
         <Grid columns="100" breakAndCenter="900px">
@@ -62,6 +62,8 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section>
+    <H2 center>Is your current provider making you pay for features or support?</H2>
+    <H3 center>We are not into that!</H3>
     <div class="pricing-table">
   <div class="pricing-box">
     <h2>Single Venue</h2>

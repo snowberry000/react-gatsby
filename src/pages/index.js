@@ -47,14 +47,13 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="HeyAgenda: All in One Venue Management Software" />
+    <SEO title="All in One Simple Venue Booking Software" SEO description="Get it together and manage your venues the right way. Everything organised in one place, no double bookings, no stress. All in one simple venue booking software" />
     <Header />
     <Section bgColor="accent3" height="30em" left>
       <Grid columns="1fr 22em" breakAndCenter="850px">
           <div style={{ alignItems: "left", justifyContent: "left" }}>
-          <H1>All in One Venue Management Software</H1>
-          <h2 class="white-center-margin">Everything you need to get your venue in order and make your life easier - All in one simple yet powerful platform. </h2>
-
+          <H1>Get it together and manage your venues the right way.</H1>
+          <h2 class="white-center-margin">Everything organised in one place, no double bookings, no stress. All in One Simple Venue Booking Software. </h2>
           <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
           {/* <p1>No credit card required. Cancel anytime.</p1> */}
         </div>
@@ -69,6 +68,7 @@ const IndexPage = () => (
       <Venues />
     </Section>
     <Section>
+      <H3 center>Online Venue Management Software Features</H3>
       <Grid columns="40% 60%" fullHeight breakAndCenter="800px">
         <Features />
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -77,9 +77,11 @@ const IndexPage = () => (
       </Grid>
     </Section>
     <Section>
+      <H3 center>Video of our Venue Management Software</H3>
       <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
     </Section>
     <Section>
+    <H3 center>What we offer as standard in our all our plans</H3>
       <InfoCard />
     </Section>
 

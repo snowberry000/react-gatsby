@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,19 +45,33 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Community Centre Venue Management Software" SEO description="Specifically Designed Community Venue & Space Management Software - Everything organised in one place, no double bookings, accept payments online -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Community Centre Scheduling and Management Software </H1>
+          <h2 class="white-center">Manage your Community Centres easier and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Community Centres.</H2>
+      <p>Keeping on top of bookings at a Community Centre can be difficult and tough. You have Scouts in on a Monday night, Tuesday is Yoga, Wednesday, a Community Group and Friday a party. Sound familiar? </p>
+      <p>When you're spinning plates, mistakes happen. Double Bookings. Chasing unpaid invoices the list of tasks goes on. You're looking for something to help and you're fed up filling in spreadsheets.</p>
+      <p>What you need is a community centre booking software system, that's going to get your centre in order, take some of the stress away and make sure there are no double bookings all whilst making sure you're getting paid quicker.</p>
+      <p>That's exactly what Hey Agenda does, we have a really simple yet powerful platform, that you can put into your centres today. It's super easy and no staff training and no difficult or hard software to understand. It takes our centres on average about 7 minutes to set up the system and take their first booking.</p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Product-Pages/community-centre-venue-booking-management-software.jpg" width="100%" alt="Community Centre Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Community Centre Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
@@ -92,7 +105,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your community centres more efficently than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

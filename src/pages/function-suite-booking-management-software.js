@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,19 +45,34 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Function Suite Venue Management Software" SEO description="Specifically Designed Function Suite & Venue Management Software - Everything organised in one place, no double bookings, accept payments online -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Function Suite Scheduling Software </H1>
+          <h2 class="white-center">Manage your Church Halls easier and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Function Suites.</H2>
+      <p>You have a busy function suite and you're looking for some software that can manage party and event bookings in the same place. Am I right? </p>
+      <p>Well, you're in luck. Hey Agenda is a purpose-built Function Suite Management Software. That allows you to manage all your function rooms in the same place. Generate quotations, Generate an invoice and get paid - all within a few clicks.</p>
+      <p>We work with bars, pubs, nightclubs and purpose-built function and event venues. All who were like you looking for a solution.</p>
+      <p>Our software is a really simple but powerful platform. It's super easy and no staff training and no difficult or hard software to understand. It takes our sports facilities on average about 7 minutes to set up the system and take their first booking.</p>
+      <p>So what are you waiting for? Give our 14 days free no-obligation trial a go today.</p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Product-Pages/function-suite-venue-management-booking-software.jpg" width="100%" alt="Church Hall Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Church Hall Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
@@ -92,7 +106,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your meeting spaces better and faster than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

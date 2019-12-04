@@ -53,28 +53,28 @@ const Venues = props => {
       <Venue image={Community}>
         <div>
           <H3 center color="white">
-            Community Centres
+            <a href="/community-centres-booking-management-software">Community Centres</a>
           </H3>
         </div>
       </Venue>
       <Venue image={Church}>
         <div>
           <H3 center color="white">
-            Church Halls
+            <a href="/church-halls-booking-management-software">Church Halls</a>
           </H3>
         </div>
       </Venue>
       <Venue image={FunctionRoom}>
         <div>
           <H3 center color="white">
-            Function Suites
+            <a href="/function-suite-booking-management-software">Function Suites</a>
           </H3>
         </div>
       </Venue>
       <Venue image={Meeting}>
         <div>
           <H3 center color="white">
-            Meeting Rooms
+            <a href="/meeting-room-booking-management-software">Meeting Rooms</a>
           </H3>
         </div>
       </Venue>

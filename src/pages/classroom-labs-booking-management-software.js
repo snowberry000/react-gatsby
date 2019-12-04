@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,19 +45,34 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Class Room Booking Venue Management Software" SEO description="Specifically Designed School & Lab Venue & Space Management Software - Everything organised in one place, no double bookings -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Class Room & Lab Scheduling Software </H1>
+          <h2 class="white-center">Manage your Class Rooms easier and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Classrooms, Labs, Computer Rooms and Libraries.</H2>
+      <p>Managing all the Class Rooms and Labs within a faculty building can be almost impossible, especially when you have multiple campuses or buildings. Now there are some old school solutions, such as using spreadsheets or a paper diary but its inevitable mistakes are going to happen. </p>
+      <p>Staff and Students want to see live availability and book out slots in real-time.</p>
+      <p>What you need is a Class Room and Lab booking software system, that's going to get your faculties in order, take some of the stress away and make sure there are no double bookings across multiple campuses. </p>
+      <p>That's exactly what Hey Agenda does, we have a really simple yet powerful platform, that you can put into your schools today. It's super easy and no staff training and no difficult or hard software to understand. It takes our centres on average about 7 minutes to set up the system and take their first booking.</p>
+      <p>So what are you waiting for? Give our 14 days free no-obligation trial a go today.</p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Product-Pages/class-room-hire-venue-management-software.jpg" width="100%" alt="Meeting Room Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Classrooms, Labs, Computer Rooms and Libraries. Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
@@ -92,7 +106,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your meeting spaces better and faster than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

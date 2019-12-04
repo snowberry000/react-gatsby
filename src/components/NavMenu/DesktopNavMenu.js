@@ -112,12 +112,15 @@ const DesktopNavMenu = () => {
 			<StyledSignUpButton className="has-sub-menu" type="tertiary">
 				Examples <FontAwesomeIcon icon={faAngleDown} />
 				<ul className="dropdown">
-					<li>Meeting Rooms</li>
-					<li>Sports Venue</li>
-					<li>Professional Studios</li>
-					<li>Coworking Spaces</li>
-					<li>Classrooms and Labs</li>
-					<li>Consulting Rooms</li>
+          <a href="/meeting-room-booking-management-software"><li>Meeting Rooms</li></a>
+          <a href="/community-centres-booking-management-software"><li>Community Centres</li></a>
+					<a href="/sports-venue-booking-management-software"><li>Sports Venue</li></a>
+					<a href="/professional-studios-booking-management-software"><li>Professional Studios</li></a>
+					<a href="/coworking-space-booking-management-software"><li>Coworking Spaces</li></a>
+          <a href="/church-halls-booking-management-software"><li>Church Halls</li></a>
+					<a href="/classroom-labs-booking-management-software"><li>Classrooms and Labs</li></a>
+          <a href="/function-suite-booking-management-software"><li>Function Suites</li></a>
+					<a href="/consulting-rooms-booking-management-software"><li>Consulting Rooms</li></a>
 				</ul>
 			</StyledSignUpButton>
 			<StyledSignUpButton type="tertiary" href="/pricing">Pricing</StyledSignUpButton>

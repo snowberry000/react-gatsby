@@ -15,7 +15,6 @@ import P1 from "../components/typography/P1";
 import FeatureInfoRow from "../components/FeatureInfoRow";
 import "../main.css";
 import Footer from "../components/Footer";
-import LaptopVideoPlayer from "../components/LaptopVideoPlayer";
 
 import Helmet from 'react-helmet'
 
@@ -46,24 +45,37 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="Features Everything is Included" SEO description="Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support." />
+    <SEO title="Church Hall Management Software" SEO description="Specifically Designed Church Venue & Space Management Software - Everything organised in one place, no double bookings, accept payments online -  no stress. " />
     <Header />
     <Section bgColor="accent3" height="20em" center>
       <Grid columns="100" breakAndCenter="900px">
         <div>
-          <H1 center>Everything is included</H1>
-          <h2 class="white-center">Get instant access to an all-in-one venue management software. All at a clear and up-front pricing, no lengthy contracts and no cost for support.</h2>
+          <H1 center>Church Hall Scheduling Software </H1>
+          <h2 class="white-center">Manage your Church Halls easier and faster than ever before. </h2>
+          <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
         </div>
       </Grid>
     </Section>
     <Section>
-      <LaptopVideoPlayer videoUrl="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/final_5dc45b959b66d5001325882c_927754.mp4" />
-    </Section>
+    <Grid columns="50% 50%" breakAndCenter="900px">
+      <div>
+      <H2>Specifically Designed Venue and Space Management Software for Church Halls.</H2>
+      <p>Renting out the space within your church can be pretty difficult, especially when you're trying to run profitable. You're juggling event bookings in between services, or a community member is looking at the bookings</p>
+      <p>Our Venue Management Software has been specifically designed to manage your spaces better, easier and quicker than ever before. All members including the minister can login to the sofwtware and see the availability of the space bookings </p>
+      <p>Specifically designed Venue and Church Hall Management Software - Hey Agenda can help you manage your most important assets better - your Church Halls.</p>
+      <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+      </div>
+      <div>
+      <img src="https://justvenue.ams3.digitaloceanspaces.com/Hey-Agenda/Product-Pages/Product-Pages/church-hall-booking-software.jpg" width="100%" alt="Church Hall Venue Management Software"></img>
+      </div>
+    </Grid>
+  </Section>
+  <H2 center>Our Church Hall Scheduling Features </H2>
     <Section>
       <FeatureInfoRow
         imgPosition="left"
         heading="Powerful Integrated Calendar"
-        subHeading="Manage your calendar in our easy to use software."
+        subHeading="Manage your Church calendar in our easy to use software."
         imgSrc="https://justvenue.ams3.cdn.digitaloceanspaces.com/Hey-Agenda/Hey-Agenda/calendar.jpg"
         description="Manage your calendar by Day, Week and Even Month. See all your spaces in one easy place. See all upcoming events in one easy to use dashboard."
       />
@@ -92,7 +104,7 @@ const IndexPage = () => (
     <Section bgColor="accent3" height="20em" center >
       <Grid columns="100%">
         <div style={{ alignItems: "center", justifyContent: "center style" }}>
-          <h2 class="white-text">Ditch the admin, Get paid on time and live a stress-free life.</h2>
+          <h2 class="white-text">Manage your meeting spaces better and faster than ever before, stop double bookings and live a stress free life.</h2>
         </div>
       </Grid>
     </Section>

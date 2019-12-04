@@ -51,7 +51,7 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => (
   <LayoutWrapper>
-    <SEO title="HeyAgenda: All in One Venue Management Software" />
+    <SEO title="About " SEO description="About Hey Agenda - The Venue Management Software"/>
     <Header />
     <Section bgColor="accent3" height="20em" left>
       <Grid columns="1fr 22em" breakAndCenter="850px">

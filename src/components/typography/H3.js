@@ -9,7 +9,7 @@ const H3 = styled.h3`
   font-weight: 600;
   line-height: 1.25;
   @media (max-width: 640px) {
-    font-size: 1.6em;
+    font-size: 1em;
   }
 `;
 
