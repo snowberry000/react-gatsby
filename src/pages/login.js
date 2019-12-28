@@ -50,10 +50,11 @@ const IndexPage = () => {
   const [authCallbackUrl, setAuthCallbackUrl] = useState("https://app.heyagenda.com/login")
   useEffect(() => {
     if (window.location.href.indexOf('returnUrl=') > 0) {
-      setAuthCallbackUrl(window.location.href.substring(
-        window.location.href.indexOf('returnUrl=') + 'returnUrl='.length,
-        window.location.href.length
-      ))
+      setAuthCallbackUrl(
+        window.location.href.substring(
+          window.location.href.indexOf('returnUrl=') + 'returnUrl='.length,
+          window.location.href.indexOf('access_token'))
+        )      
     }    
   }, [])
 
