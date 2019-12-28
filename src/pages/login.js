@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import Assets from "../components/Assets";
 import BuildingsStrip from "../components/BuildingsStrip";
@@ -46,6 +46,16 @@ const StyledSignUpButton = styled.a`
 `;
 
 const IndexPage = () => {
+
+  const [authCallbackUrl, setAuthCallbackUrl] = useState("https://app.heyagenda.com/login")
+  useEffect(() => {
+    if (window.location.href.indexOf('returnUrl=') > 0) {
+      setAuthCallbackUrl(window.location.href.substring(
+        window.location.href.indexOf('returnUrl=') + 'returnUrl='.length,
+        window.location.href.length
+      ))
+    }    
+  }, [])
 
 	const onLoginOutSetaLoad = () => {
 		setTimeout(() => {
@@ -124,7 +134,8 @@ const IndexPage = () => {
           type="text/javascript"
           src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
           data-widget-mode="login"
-          data-popup-selector="#login-btn">
+          data-popup-selector="#login-btn"
+          auth-callback-url={authCallbackUrl}>
         </script>
         <script
           type="text/javascript"
