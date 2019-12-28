@@ -60,7 +60,12 @@ const IndexPage = () => {
         const scriptTag = scriptTags[0];
         scriptTag.onload = onLoginOutSetaLoad;
     }
-	}
+  }
+  
+  const clickSignUp = () => {
+    var registerButton = document.getElementsByClassName('register-btn-signup');
+    registerButton[0].click();
+  }
     
   return (
     <LayoutWrapper>
@@ -71,7 +76,7 @@ const IndexPage = () => {
             <div style={{ alignItems: "left", justifyContent: "left" }}>
             <H1>Get it together and manage your venues the right way.</H1>
             <h2 class="white-center-margin">Everything organised in one place, no double bookings, no stress. All in One Simple Venue Booking Software. </h2>
-            <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+            <StyledSignUpButton onClick={clickSignUp} href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
             {/* <p1>No credit card required. Cancel anytime.</p1> */}
           </div>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
