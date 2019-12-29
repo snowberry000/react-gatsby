@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import Assets from "../components/Assets";
 import BuildingsStrip from "../components/BuildingsStrip";
@@ -47,6 +47,17 @@ const StyledSignUpButton = styled.a`
 
 const IndexPage = () => {
 
+  const [authCallbackUrl, setAuthCallbackUrl] = useState("https://app.heyagenda.com/login")
+  useEffect(() => {
+    if (window.location.href.indexOf('returnUrl=') > 0) {
+      setAuthCallbackUrl(
+        window.location.href.substring(
+          window.location.href.indexOf('returnUrl=') + 'returnUrl='.length,
+          window.location.href.indexOf('access_token'))
+        )      
+    }    
+  }, [])
+
 	const onLoginOutSetaLoad = () => {
 		setTimeout(() => {
 			var loginButton = document.getElementById('login-btn');		
@@ -60,7 +71,12 @@ const IndexPage = () => {
         const scriptTag = scriptTags[0];
         scriptTag.onload = onLoginOutSetaLoad;
     }
-	}
+  }
+  
+  const clickSignUp = () => {
+    var registerButton = document.getElementsByClassName('register-btn-signup');
+    registerButton[0].click();
+  }
     
   return (
     <LayoutWrapper>
@@ -71,7 +87,7 @@ const IndexPage = () => {
             <div style={{ alignItems: "left", justifyContent: "left" }}>
             <H1>Get it together and manage your venues the right way.</H1>
             <h2 class="white-center-margin">Everything organised in one place, no double bookings, no stress. All in One Simple Venue Booking Software. </h2>
-            <StyledSignUpButton className="register-btn-signup" href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
+            <StyledSignUpButton onClick={clickSignUp} href="#">👉Start 14-Day Free Trial 👈</StyledSignUpButton>
             {/* <p1>No credit card required. Cancel anytime.</p1> */}
           </div>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -119,7 +135,8 @@ const IndexPage = () => {
           type="text/javascript"
           src="https://heyagenda.outseta.com/Scripts/client/dist/outseta.auth.widget.min.js"
           data-widget-mode="login"
-          data-popup-selector="#login-btn">
+          data-popup-selector="#login-btn"
+          auth-callback-url={authCallbackUrl}>
         </script>
         <script
           type="text/javascript"
