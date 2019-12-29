@@ -52,9 +52,10 @@ const IndexPage = () => {
     if (window.location.href.indexOf('returnUrl=') > 0) {
       setAuthCallbackUrl(
         window.location.href.substring(
-          window.location.href.indexOf('returnUrl=') + 'returnUrl='.length,
-          window.location.href.indexOf('access_token'))
-        )      
+          window.location.href.indexOf('?returnUrl=') + '?returnUrl='.length,
+          window.location.href.length
+        )
+      )
     }    
   }, [])
 
